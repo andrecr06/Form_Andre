@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://formsubmit.co/andrebenavidesa@gmail.com"
+        method="POST"
+      >
+        <h3>Contáctenos</h3>
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="name" placeholder="Su nombre" required />
+
+        <label for="email">Correo eléctronico</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Su correo eléctronico"
+          required
+        />
+        <label for="Phone">Teléfono</label>
+        <input
+          type="number"
+          name="phone"
+          placeholder="Su número de teléfono"
+          required
+        />
+        <label for="message">Mensaje</label>
+        <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+
+        
+          <h3>¿Por cuál medio prefiere que le contactemos?</h3>
+          <div>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contacto"
+              value="email"
+              id="radio-email"
+            />
+            Email</label
+          >
+
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="radio-telefono"
+            />
+            Teléfono</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contacto"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />
+            WhatsApp</label
+          >
+        </div>
+
+        <label
+          ><input type="checkbox" name="contacto" />¿Le gustaría recibir novedades de la
+          empresa?</label
+        >
+
+        <button type="submit">Envíar</button>
+      </form>
+    </div>
+  </body>
+</html>
